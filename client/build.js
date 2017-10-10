@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 const hasArg = arg => {
   for (var i = 0; i < process.argv.length; i++) {
@@ -39,7 +40,15 @@ const webpackConfig = {
         from: path.join(__dirname, '/src/app/app.html'),
         to: path.join(__dirname, '/build/app.html')
       }
-    ])
+    ]),
+    new UglifyJSPlugin({
+      uglifyOptions: {
+        mangle: true,
+        compress: {
+          unused: true
+        }
+      }
+    })
   ]
 }
 
