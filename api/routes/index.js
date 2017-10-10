@@ -1,5 +1,5 @@
-// Static
-import getHome from './getHome'
+import express from 'express'
+import path from 'path'
 
 // API
 import getSearch from './getSearch'
@@ -19,8 +19,6 @@ import getProfile from './getProfile'
 
 export default {
   mount: app => {
-    app.get ('/', getHome)
-
     app.get ('/api/:ver/status', (req, res) => res.json({ success: true }))
     app.get ('/api/:ver/search', getSearch)
     app.get ('/api/:ver/categories', getCategories)
@@ -35,5 +33,9 @@ export default {
     app.post('/login', postLogin)
     app.get ('/logout', getLogout)
     app.get ('/api/:ver/user', getProfile)
+
+    app.use(express.static(path.join(__dirname, '../../client/build'), {
+      extensions: ['html']
+    }))
   }
 }
