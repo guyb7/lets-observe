@@ -12,7 +12,7 @@ const hasArg = arg => {
   return false
 }
 
-const webpackConfig = {
+const webpackAppConfig = {
   entry: {
     app: path.join(__dirname, '/src/app/index.js')
   },
@@ -32,15 +32,6 @@ const webpackConfig = {
     ]
   },
   plugins: [
-    new CopyWebpackPlugin([
-      {
-        from: path.join(__dirname, '/src/*'),
-        to: path.join(__dirname, '/build/[name].[ext]')
-      }, {
-        from: path.join(__dirname, '/src/app/app.html'),
-        to: path.join(__dirname, '/build/app.html')
-      }
-    ]),
     new UglifyJSPlugin({
       uglifyOptions: {
         mangle: true,
@@ -52,21 +43,56 @@ const webpackConfig = {
   ]
 }
 
-const copyStaticFiles = (err, stats) => {
+const webpackHomepageConfig = {
+  entry: {
+    homepage: path.join(__dirname, '/src/homepage.js')
+  },
+  output: {
+    path: path.join(__dirname, '/build'),
+    filename: 'homepage.js'
+  },
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: path.join(__dirname, '/src/*'),
+        to: path.join(__dirname, '/build/[name].[ext]')
+      }, {
+        from: path.join(__dirname, '/src/app/app.html'),
+        to: path.join(__dirname, '/build/app.html')
+      }
+    ])
+  ]
+}
+
+const onAppCompiled = (err, stats) => {
   if (err) {
     console.error(err)
   } else {
-    console.log('Client build updated')
+    console.log('App compiled')
   }
 }
 
-const webpackCompiler = webpack(webpackConfig)
+const onHomepageCopied = (err, stats) => {
+  if (err) {
+    console.error(err)
+  } else {
+    console.log('Homepage copied')
+  }
+}
+
+const webpackAppCompiler = webpack(webpackAppConfig)
+const webpackHomepageCompiler = webpack(webpackHomepageConfig)
 
 if (hasArg('--watch')) {
-  webpackCompiler.watch({
+  webpackAppCompiler.watch({
     aggregateTimeout: 300,
     poll: true
-  }, copyStaticFiles)
+  }, onAppCompiled)
+  webpackHomepageCompiler.watch({
+    aggregateTimeout: 300,
+    poll: true
+  }, onHomepageCopied)
 } else {
-  webpackCompiler.run(copyStaticFiles)
+  webpackAppCompiler.run(onAppCompiled)
+  webpackHomepageCompiler.run(onHomepageCopied)
 }
