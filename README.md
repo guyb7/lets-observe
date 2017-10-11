@@ -2,6 +2,7 @@
 
 ## Development
 [React-Bootstrap](https://react-bootstrap.github.io/components.html)
+[Bootstrap](https://getbootstrap.com/docs/3.3/css/)
 
 ### Setup
 ```

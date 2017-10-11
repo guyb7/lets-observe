@@ -34,8 +34,8 @@ const webpackConfig = {
   plugins: [
     new CopyWebpackPlugin([
       {
-        from: path.join(__dirname, '/src/index.html'),
-        to: path.join(__dirname, '/build/index.html')
+        from: path.join(__dirname, '/src/*'),
+        to: path.join(__dirname, '/build/[name].[ext]')
       }, {
         from: path.join(__dirname, '/src/app/app.html'),
         to: path.join(__dirname, '/build/app.html')
