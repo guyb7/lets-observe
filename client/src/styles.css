@@ -21,22 +21,7 @@ header {
   background-color: #002b36;
 }
 header > div > .container {
-  padding: 40px 10px;
-}
-header h1 {
-  color: #eee8d5;
-  margin: 0;
-  padding: 10px;
-}
-header h2 {
-  color: #93a1a1;
-  margin: 0;
-  padding: 10px;
-  font-size: 22px;
-  font-weight: 300;
-}
-header .btn {
-  margin: 30px 0;
+  padding: 20px 10px 100px;
 }
 nav .nav-tabs {
   border-bottom: 0 solid transparent;
@@ -52,4 +37,54 @@ nav .nav-tabs {
   border: 1px solid transparent;
   border-bottom: 1px solid #ddd;
   background-color: transparent;
+}
+header .headline {
+  padding: 80px 0;
+}
+header h1 {
+  color: #eee8d5;
+  margin: 0;
+  padding: 10px;
+}
+header h2 {
+  color: #93a1a1;
+  margin: 0;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 300;
+}
+header .input-group.input-group-lg input,
+header .input-group.input-group-lg button.btn {
+  font-size: 15px;
+}
+header form {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header form a {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px -10px 0 0;
+  font-size: 13px;
+}
+
+.marketing-item {
+  padding: 40px;
+}
+.marketing-item .container {
+  max-width: 750px;
+}
+.marketing-item img {
+  margin: 0 auto;
+}
+.marketing-item:nth-child(odd) {
+  background-color: #eee8d5;
+}
+
+footer {
+  padding: 40px 10px;
+  font-size: 13px;
+  color: #657b83;
+  background-color: #002b36;
 }

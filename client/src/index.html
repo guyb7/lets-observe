@@ -11,69 +11,82 @@
 </head>
 
 <body>
-   <header>
-     <nav class="container">
-       <ul class="nav nav-tabs">
-          <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a href="#">Documentation</a></li>
-          <li role="presentation"><a href="#">Blog</a></li>
-          <li role="presentation"><a href="#">About Us</a></li>
-        </ul>
-     </nav>
-     <div class="text-center">
+  <header>
+    <nav class="container">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Documentation</a></li>
+        <li role="presentation"><a href="#">Blog</a></li>          <li role="presentation"><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="text-center">
       <div class="container">
-        <h1>
-          Let's Observe
-        </h1>
-        <h2>
-          Apply scientific research to your personal life
-        </h2>
-        <p><a class="btn btn-primary btn-lg" href="/app" role="button">Launch</a></p>
+        <div class="headline">
+          <h1>
+            Let's Observe
+          </h1>
+          <h2>
+            Apply scientific research to your personal life
+          </h2>
+        </div>
+        <form>
+          <div class="input-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Insert experiment keywords...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="submit">Search</button>
+            </span>
+          </div>
+          <div class="text-right">
+            <a href="#">Advanced Search</a>
+          </div>
+        </form>
       </div>
     </div>
-   </header>
+  </header>
 
-  <section class="container">
-    <div class="row">
-      <div class="col-sm-8">
-        <h3>Find studies relevant to you</h3>
-        <p>
-          Search for results of scientific studies that may affect your day-to-day life, from choosing a new mattress to diagnosing a troublesome headache.
-        </p>
-        <h3>Test for yourself</h3>
+  <section class="marketing-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Research results in simple language</h3>
           <p>
-            The sample group of a study may not reflect your demographic group, and even if it does, the results almost always show only the averages. We let you run the experiment for yourself and analyze your personal results.
+            Get simplified tl;dr results of scientific papers and experiments.
           </p>
-      </div>
-      <div class="col-sm-4">
-        <img src="https://www.royalacademy.org.uk/assets/placeholder-1e385d52942ef11d42405be4f7d0a30d.jpg" class="img-responsive">
+        </div>
+        <div class="col-sm-6">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0iIzAwMDAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkYXRhLW5hbWU9IkxheWVyIDEiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4PSIwcHgiIHk9IjBweCI+PHRpdGxlPkFydGJvYXJkIDExPC90aXRsZT48cGF0aCBkPSJNNTAsNC4xNVYyOC4ySDI3Ljg1VjU2LjkySDkuMjJ2MzEuOEgyLjM0djcuMTJIOTcuNjZWODguNzJIOTAuNzhWNDJINjguNjNWNC4xNVpNMjcuODUsODguNzJIMTYuMjVWNjMuOTVoMTEuNlptMTguNjMsMEgzNC44OVYzNS4yM2gxMS42Wk03Mi4xNSw0OWgxMS42Vjg4LjcySDcyLjE1WiIvPjwvc3ZnPg==" class="img-responsive">
+        </div>
       </div>
     </div>
   </section>
 
-  <section>
+  <section class="marketing-item">
     <div class="container">
-      <div class="row text-center">
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-          <h3>Diagnose</h3>
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0iIzAwMDAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMCAxMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxnPjxwYXRoIGQ9Ik02OC45OSwxNi43MTNoLTE0LjUybDIuNjk3LTQuNzE5YzAuNDEtMC43MTksMC4xNjEtMS42MzUtMC41NTktMi4wNDZjLTAuNzE2LTAuNDA5LTEuNjM1LTAuMTYxLTIuMDQ3LDAuNTU4bC0zLjU0OCw2LjIwNyAgICBoLTQuMjQ4bC0zLjU0OC02LjIwOGMtMC40MTEtMC43MTktMS4zMjctMC45NjktMi4wNDctMC41NThjLTAuNzE5LDAuNDExLTAuOTY5LDEuMzI4LTAuNTU4LDIuMDQ3bDIuNjk3LDQuNzE4SDMwLjYwMSAgICBjLTMuMzE3LDAtNi4wMTcsMi42OTktNi4wMTcsNi4wMTZ2NjMuMDA0YzAsMy4zMTcsMi42OTksNi4wMTcsNi4wMTcsNi4wMTdoMzguMzljMy4zMTcsMCw2LjAxNy0yLjY5OSw2LjAxNy02LjAxN1YyMi43MjkgICAgQzc1LjAwNywxOS40MTIsNzIuMzA4LDE2LjcxMyw2OC45OSwxNi43MTN6IE03Mi4wMDcsODUuNzMzYzAsMS42NjMtMS4zNTQsMy4wMTctMy4wMTcsMy4wMTdoLTM4LjM5ICAgIGMtMS42NjQsMC0zLjAxNy0xLjM1NC0zLjAxNy0zLjAxN1YyMi43MjljMC0xLjY2MywxLjM1My0zLjAxNiwzLjAxNy0zLjAxNmgxNC40MjZsMS41MjMsMi42NjZjLTAuMjM1LDAuNDItMC4zOCwwLjg5Ny0wLjM4LDEuNDEyICAgIGMwLDEuNjA3LDEuMzA4LDIuOTE2LDIuOTE2LDIuOTE2YzEuNjA3LDAsMi45MTUtMS4zMDgsMi45MTUtMi45MTZjMC0xLjU4NS0xLjI3My0yLjg3NC0yLjg1LTIuOTA5bC0wLjY2OC0xLjE2OGgzLjM5OSAgICBjMC4wMDEsMCwwLjAwMywwLDAuMDA0LDBzMC4wMDIsMCwwLjAwNCwwSDY4Ljk5YzEuNjYzLDAsMy4wMTcsMS4zNTMsMy4wMTcsMy4wMTZWODUuNzMzeiIvPjxwYXRoIGQ9Ik0zNS4xOTgsNTcuMzkzaDI5LjE5NVYyOC4xOTdIMzUuMTk4VjU3LjM5M3ogTTQzLjgzNSw1NC4zOTNjMC42NzItMi42NjksMy4wODUtNC42NTMsNS45Ni00LjY1MyAgICBjMi44NzUsMCw1LjI4OCwxLjk4NCw1Ljk2LDQuNjUzSDQzLjgzNXogTTM4LjE5OCwzMS4xOTdoMjMuMTk1djIzLjE5NWgtMi41NzhjLTAuNzItNC4zMzQtNC40ODMtNy42NTMtOS4wMTktNy42NTMgICAgcy04LjMsMy4zMTktOS4wMiw3LjY1M2gtMi41NzhWMzEuMTk3eiIvPjxwYXRoIGQ9Ik00OS43OTUsNDYuNTUyYzMuMDg5LDAsNS42MDMtMi41MTMsNS42MDMtNS42MDNjMC0zLjA5LTIuNTE0LTUuNjA0LTUuNjAzLTUuNjA0cy01LjYwMywyLjUxNC01LjYwMyw1LjYwNCAgICBDNDQuMTkyLDQ0LjAzOSw0Ni43MDYsNDYuNTUyLDQ5Ljc5NSw0Ni41NTJ6IE00OS43OTUsMzguMzQ2YzEuNDM1LDAsMi42MDMsMS4xNjgsMi42MDMsMi42MDRjMCwxLjQzNS0xLjE2OCwyLjYwMy0yLjYwMywyLjYwMyAgICBjLTEuNDM2LDAtMi42MDMtMS4xNjctMi42MDMtMi42MDNDNDcuMTkyLDM5LjUxNCw0OC4zNiwzOC4zNDYsNDkuNzk1LDM4LjM0NnoiLz48cGF0aCBkPSJNNjIuODkzLDYyLjE3OUgzNi42OThjLTAuODI5LDAtMS41LDAuNjcyLTEuNSwxLjVzMC42NzEsMS41LDEuNSwxLjVoMjYuMTk1YzAuODI4LDAsMS41LTAuNjcyLDEuNS0xLjUgICAgUzYzLjcyMSw2Mi4xNzksNjIuODkzLDYyLjE3OXoiLz48cGF0aCBkPSJNNjIuODkzLDcwLjEzNkgzNi42OThjLTAuODI5LDAtMS41LDAuNjcyLTEuNSwxLjVzMC42NzEsMS41LDEuNSwxLjVoMjYuMTk1YzAuODI4LDAsMS41LTAuNjcyLDEuNS0xLjUgICAgUzYzLjcyMSw3MC4xMzYsNjIuODkzLDcwLjEzNnoiLz48cGF0aCBkPSJNNjIuODkzLDc4LjYwNEgzNi42OThjLTAuODI5LDAtMS41LDAuNjcyLTEuNSwxLjVzMC42NzEsMS41LDEuNSwxLjVoMjYuMTk1YzAuODI4LDAsMS41LTAuNjcyLDEuNS0xLjUgICAgUzYzLjcyMSw3OC42MDQsNjIuODkzLDc4LjYwNHoiLz48L2c+PC9nPjwvc3ZnPg==" class="img-responsive">
+        </div>
+        <div class="col-sm-6">
+          <h3>Find studies relevant to you</h3>
           <p>
-            Symptoms can be explained by different diseases and conditions. Use statistics to see which most likely explains your situation.
+            Search for results of scientific studies that may affect your day-to-day life, from choosing a new mattress to diagnosing a troublesome headache.
           </p>
         </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-          <h3>AB Test</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="marketing-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Test for yourself</h3>
           <p>
-            Track the effectiveness of different products or treatments. We will let you know which performs best in your case.
+            The sample group of a study may not reflect your demographic group, and even if it does, the results almost always show only the averages. We let you run the experiment for yourself and analyze your personal results.
           </p>
         </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-          <h3>Prevent</h3>
-          <p>
-            Find out if you're in an increased risk based on your genetics, environment and lifestyle.
-          </p>
+        <div class="col-sm-6">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0iIzAwMDAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDM0IDM0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNCAzNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0zMC41LDFoLTIydjVoLTV2MjdoMjJ2LTVoNVYxeiBNMjMuNSwzMWgtMThWOGgzdjIwaDE1VjMxeiBNMjguNSwyNmgtMThWM2gxOFYyNnogTTE5LjUsNy41SDEydi0xaDcuNVY3LjV6IE0yNy4xLDEyLjVIMTIgIHYtMWgxNS4xVjEyLjV6IE0yNy4xLDE1SDEydi0xaDE1LjFWMTV6IE0yNy4xLDEwSDEyVjloMTUuMVYxMHogTTE3LjIsMjEuOEgxMnYtMWg0LjVsMS4xLTIuNWwyLDMuNGwyLjctNWwxLjQsNC4xSDI3djFoLTRsLTAuOS0yLjYgIGwtMi40LDQuNWwtMS45LTMuMkwxNy4yLDIxLjh6Ii8+PC9zdmc+" class="img-responsive">
         </div>
       </div>
     </div>
